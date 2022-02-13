@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block link %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'CSS/about.css' %}">
+{% endblock link %}
+{% block title %}About{% endblock title %}
+
+{% block content %}
+    <div class="about-content-alignment">
+        <div class="about-content-container">
+            <div class="about-text">
+                <h1>Hello, I am David Paredes</h1>
+                <p>I started my programming passion in highschool where I was in a basic web programming class. I learned HTML, CSS, and a bit of JavaScript in this class. Ever since then I felt the need to code and learn what I can to do so. I took a detour to the U.S. Navy where i served for 8 years as an Aviation Electronics Technician. Along with my main duties I had collaterals as a shipboard fire fighter, security officer, and even bus driver to name just a few. After the service I started to dive deeper into programming and began looking in on coding courses like the one at San Diego Global Knowledge University. I have continued to code and do not have any plans of stopping.</p>
+            </div>
+            
+            {% load static %}
+            <img class="profile-picture" src="{% static 'images/ProfilePicture.jpeg' %}" alt="David Paredes Picture" />      
+        </div>
+    </div>
+{% endblock content %}

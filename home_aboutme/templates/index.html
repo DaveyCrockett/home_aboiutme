@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block link %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'CSS/home.css' %}">
+{% endblock link %}
+{% block title %}Home{% endblock title %}
+
+{% block content %}
+<div class="home-text-container">
+    <h1>Hello, World!</h1>
+    <p>Welcome to my first django app!</p>
+</div>
+{% endblock content %}
